@@ -48,3 +48,44 @@ console.log("La bici con il peso minore è:" ,bici[4].peso, "kg");
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+// SNACK 2
+// Crea un array di oggetti con le squadre da calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti. Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+
+const nomiSquadre = ["barcellona", "milan", "inter", "juventus", "real madrid"];
+
+function randomNumbers(min, max) {
+    let numeroCasuale = (Math.floor(Math.random() * (max - min + 1)) + min);
+    return numeroCasuale;
+}
+
+const squadre = nomiSquadre.map(nome => ({
+
+    'nome': nome,
+    'puntiFatti': randomNumbers(1, 20),
+    'falliSubiti': randomNumbers(1, 20)
+
+}));
+
+// Stampiamo l'array di oggetti con i parametri delle squadre
+console.table("Array con tutte le squadre:", squadre);
+
+
+// (Debug) Generare numeri random con una funziona (formula)
+// function randomNumbers(min, max) {
+//     let numeroCasuale = (Math.floor(Math.random() * (max - min + 1)) + min);
+//     return numeroCasuale;
+// }
+
+//console.log(randomNumbers(1, 100));
+
+// Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+const nomiFalli = squadre.map(squadre => ({
+
+    'nomi': squadre.nome,
+    'falliSubiti': squadre.falliSubiti
+}));
+
+console.table("Array con nomi e falli subiti:", nomiFalli);
+
+
+
