@@ -7,3 +7,41 @@
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 
+// Crea un array di oggetti
+const bici = [
+
+    {
+        'nome': "bici#1",
+        'peso': 50
+    },
+
+    {
+        'nome': "bici#2",
+        'peso': 40
+    },
+
+    {
+        'nome': "bici#3",
+        'peso': 30
+    },
+
+    {
+        'nome': "bici#4",
+        'peso': 20
+    },
+
+    {
+        'nome': "bici#5",
+        'peso': 10
+    }
+
+] ;
+
+
+// (DEBUG) Stampare l'array sullo schermo
+//console.table(bici);
+
+// Stampare a schermo la bici con peso minore
+console.log("La bici con il peso minore è:" ,bici[4].peso, "kg");
+
+
