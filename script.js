@@ -6,7 +6,9 @@
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+// SNACK 1  
 // Crea un array di oggetti
 const bici = [
 
@@ -44,4 +46,5 @@ const bici = [
 // Stampare a schermo la bici con peso minore
 console.log("La bici con il peso minore è:" ,bici[4].peso, "kg");
 
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
